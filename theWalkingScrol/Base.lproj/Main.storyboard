@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="theWalkingScrol" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qq6-EL-aNP">
+                                <rect key="frame" x="157" y="20" width="286" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="286" id="Cwe-Su-LoJ"/>
+                                    <constraint firstAttribute="height" constant="152" id="hFe-PC-Clq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shelf" translatesAutoresizingMaskIntoConstraints="NO" id="aUn-Mi-8Yg">
+                                <rect key="frame" x="0.0" y="523" width="600" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="njx-5k-px1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="BPQ-3m-2xK">
+                                <rect key="frame" x="155" y="198" width="290" height="404"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="404" id="8Fb-st-hKT"/>
+                                    <constraint firstAttribute="width" constant="290" id="fG2-fx-aRM"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VxS-eY-QeY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VxS-eY-QeY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Mk-IP-tiV"/>
+                            <constraint firstItem="VxS-eY-QeY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5lL-ny-9M0"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="BPQ-3m-2xK" secondAttribute="bottom" constant="-2" id="6Yo-Wq-MZd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VxS-eY-QeY" secondAttribute="bottom" id="Eme-fW-X83"/>
+                            <constraint firstItem="BPQ-3m-2xK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M40-YX-wha"/>
+                            <constraint firstItem="aUn-Mi-8Yg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PNa-4D-eCW"/>
+                            <constraint firstItem="Qq6-EL-aNP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Qj3-Yo-nWQ"/>
+                            <constraint firstAttribute="trailing" secondItem="aUn-Mi-8Yg" secondAttribute="trailing" id="czQ-9O-Ud0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aUn-Mi-8Yg" secondAttribute="bottom" constant="14" id="hcO-2N-wjx"/>
+                            <constraint firstItem="Qq6-EL-aNP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="juK-9N-syB"/>
+                            <constraint firstAttribute="trailing" secondItem="VxS-eY-QeY" secondAttribute="trailing" id="u5O-nZ-9NU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollImg" destination="VxS-eY-QeY" id="aDa-Mf-wwn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="321"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="5" width="368" height="610"/>
+        <image name="logo" width="732" height="340"/>
+        <image name="shelf" width="865" height="114"/>
+    </resources>
+</document>
